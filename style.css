@@ -7,16 +7,24 @@
     padding: 0;
 }
 
+body {
+    background-color: #333333;
+}
+
 /* Navbar */
 #navbar {
     align-content: space-between;
     align-items: center;
-    background: #777777;
+    background-color: rgba(51,51,51,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     flex-flow: row nowrap;
     height: 7vh;
     justify-content: center;
     width: 100%;
+    z-index: 1;
 }
 
 #navbar-logo {
@@ -28,7 +36,7 @@
 #navbar-logo a {
     border: 2px solid white;
     border-radius: 2px;
-    background: linear-gradient(90deg,#333333,#666666);
+    /* background: linear-gradient(90deg,#333333,#666666); */
     color: #fff;
     display: inline-block;
     font-family: 'Black Ops One', cursive;
@@ -55,13 +63,15 @@
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    font-weight: bolder;
+    font-weight: bold;
     text-decoration: none;
-    transition: ease 0.5s;
+    opacity: 0.8;
+    transition: ease 0.3s;
 }
 
 #navbar-links li a:hover {
-    opacity: 0.5;
+    opacity: 1;
+    font-weight: bolder;
 }
 
 #navbar-contacts {
@@ -80,3 +90,56 @@
     height: 40px;
     width: 40px;
 }
+
+/* Welcome Section */
+#welcome-section {
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+}
+
+#welcome-section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0.3;
+    width: 100%;
+    z-index: -1;
+}
+
+#welcome-section svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#welcome-section svg path {
+    fill: white;
+    fill-opacity: 0.05;
+}
+
+#welcome-section h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: bolder;
+    margin: 0 auto;
+    padding-top: 20vh;
+    text-align: center;
+    width: 40%;
+}
+
+#welcome-section p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: justify;
+    width: 60%;
+}
+
+/* Projects */
