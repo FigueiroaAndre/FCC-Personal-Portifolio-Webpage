@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap');
+
+* {
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+#navbar {
+    align-content: space-between;
+    align-items: center;
+    background: #777777;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 7vh;
+    justify-content: center;
+    width: 100%;
+}
+
+#navbar-logo {
+    flex: 1;
+    padding-left: 5%;
+    text-align: left;
+}
+
+#navbar-logo a {
+    border: 2px solid white;
+    border-radius: 2px;
+    background: linear-gradient(90deg,#333333,#666666);
+    color: #fff;
+    display: inline-block;
+    font-family: 'Black Ops One', cursive;
+    font-size: 26px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 2px 5px;
+}
+
+#navbar-links {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    margin: 0 auto;
+}
+
+#navbar-links li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 5%;
+}
+
+#navbar-links li a {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: ease 0.5s;
+}
+
+#navbar-links li a:hover {
+    opacity: 0.5;
+}
+
+#navbar-contacts {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    padding-right: 10%;
+}
+
+#navbar-contacts li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+#navbar-contacts li a img {
+    height: 40px;
+    width: 40px;
+}
